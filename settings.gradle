@@ -1,0 +1,2 @@
+include ':example', ':lifemarklibrary'
+rootProject.name = "lifemark"
