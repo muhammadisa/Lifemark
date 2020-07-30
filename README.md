@@ -17,6 +17,14 @@
 
 <img src="lifemark-demo.gif" width="250">
 
+## Install
+
+For installation just add this code in your app build.gradle file
+
+```groovy
+implementation 'com.github.muhammadisa:lifemark:1.0.0'
+```
+
 ## Simple Usage
 
 1. Forever Checking
