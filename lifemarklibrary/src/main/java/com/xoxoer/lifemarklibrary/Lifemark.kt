@@ -9,6 +9,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.net.*
 import android.os.Build
+import android.util.Log
 import androidx.lifecycle.LiveData
 
 /*
@@ -49,10 +50,14 @@ class Lifemark constructor(private val context: Context) {
 
         override fun onInactive() {
             super.onInactive()
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-                connectivityManager.unregisterNetworkCallback(connectivityManagerCallback())
-            else
-                context.unregisterReceiver(networkReceiver)
+            try{
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+                    connectivityManager.unregisterNetworkCallback(connectivityManagerCallback())
+                else
+                    context.unregisterReceiver(networkReceiver)
+            }catch (e: Exception) {
+                Log.e("Lifemark", "NetworkCallback already unregistered")
+            }
         }
 
         @TargetApi(Build.VERSION_CODES.LOLLIPOP)
