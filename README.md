@@ -27,7 +27,7 @@ implementation 'com.github.muhammadisa:lifemark:1.0.1'
 
 ## Contribute?
 
-Just click this link https://github.com/muhammadisa/lifemark/blob/master/CONTRIBUTING.md
+Read the terms https://github.com/muhammadisa/lifemark/blob/master/CONTRIBUTING.md
 
 ## Need Example?
 
