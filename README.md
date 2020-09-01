@@ -25,6 +25,14 @@ For installation just add this code in your app build.gradle file
 implementation 'com.github.muhammadisa:lifemark:1.0.1'
 ```
 
+## Contribute?
+
+Just click this link https://github.com/muhammadisa/lifemark/blob/master/CONTRIBUTING.md
+
+## Need Example?
+
+Just click this link https://github.com/muhammadisa/lifemark/tree/master/example/src/main/java/com/xoxoer/example
+
 ## Simple Usage
 
 1. Forever Checking
